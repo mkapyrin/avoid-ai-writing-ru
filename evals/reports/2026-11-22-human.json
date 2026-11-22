@@ -1,0 +1,162 @@
+{
+ "rater": "maintainer, blind",
+ "date": "2026-11-22",
+ "cases": [
+  {
+   "case": "h01-own",
+   "type": "C",
+   "editor": "smart",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.3",
+    "R": "v3.4"
+   },
+   "choice_label": "P",
+   "choice": "simple",
+   "note": "В выбранном варианте отмечен неудачный оборот с длинным тире; правильная формулировка, по оценке человека, была в другом варианте. В остальном выбранный вариант лучше. (Цитата из текста убрана: исходники не публикуются.)"
+  },
+  {
+   "case": "h02-own",
+   "type": "B",
+   "editor": "sonnet",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.3",
+    "R": "v3.4"
+   },
+   "choice_label": "P",
+   "choice": "simple",
+   "note": null
+  },
+  {
+   "case": "h03-own",
+   "type": "A",
+   "editor": "opus",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.3",
+    "R": "v3.4"
+   },
+   "choice_label": "P",
+   "choice": "simple",
+   "note": null
+  },
+  {
+   "case": "h04-own",
+   "type": "A",
+   "editor": "sonnet",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.3",
+    "R": "v3.4"
+   },
+   "choice_label": "P",
+   "choice": "simple",
+   "note": null
+  },
+  {
+   "case": "h06-channel",
+   "type": "B",
+   "editor": "smart",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.3",
+    "R": "v3.4"
+   },
+   "choice_label": "P",
+   "choice": "simple",
+   "note": null
+  },
+  {
+   "case": "h08-channel",
+   "type": "C",
+   "editor": "opus",
+   "labels": {
+    "P": "v3.3",
+    "Q": "v3.4",
+    "R": "simple"
+   },
+   "choice_label": "ничья",
+   "choice": "ничья",
+   "note": null
+  },
+  {
+   "case": "h09-channel",
+   "type": "B",
+   "editor": "opus",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.4",
+    "R": "v3.3"
+   },
+   "choice_label": "R",
+   "choice": "v3.3",
+   "note": null
+  },
+  {
+   "case": "h14-review",
+   "type": "C",
+   "editor": "sonnet",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.4",
+    "R": "v3.3"
+   },
+   "choice_label": "R",
+   "choice": "v3.3",
+   "note": null
+  },
+  {
+   "case": "h15-article",
+   "type": "A",
+   "editor": "smart",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.4",
+    "R": "v3.3"
+   },
+   "choice_label": "P",
+   "choice": "simple",
+   "note": null
+  },
+  {
+   "case": "h16-article",
+   "type": "C",
+   "editor": "smart",
+   "labels": {
+    "P": "v3.4",
+    "Q": "simple",
+    "R": "v3.3"
+   },
+   "choice_label": "Q",
+   "choice": "simple",
+   "note": null
+  },
+  {
+   "case": "h18-practice",
+   "type": "B",
+   "editor": "sonnet",
+   "labels": {
+    "P": "simple",
+    "Q": "v3.3",
+    "R": "v3.4"
+   },
+   "choice_label": "",
+   "choice": null,
+   "note": null
+  },
+  {
+   "case": "h19-academic",
+   "type": "A",
+   "editor": "opus",
+   "labels": {
+    "P": "v3.3",
+    "Q": "simple",
+    "R": "v3.4"
+   },
+   "choice_label": "ничья",
+   "choice": "ничья",
+   "note": null
+  }
+ ]
+}

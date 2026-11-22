@@ -1,0 +1,105 @@
+{
+ "rater": "maintainer",
+ "blind": true,
+ "cases": [
+  {
+   "id": "h09-review",
+   "editor": "sonnet",
+   "labels": {
+    "P": "simple",
+    "Q": "v2.4",
+    "R": "v3.3"
+   },
+   "pick_label": "ничья",
+   "pick": "tie"
+  },
+  {
+   "id": "h15-promo",
+   "editor": "smart",
+   "labels": {
+    "P": "v2.4",
+    "Q": "v3.3",
+    "R": "simple"
+   },
+   "pick_label": "R",
+   "pick": "simple"
+  },
+  {
+   "id": "h14-article",
+   "editor": "sonnet",
+   "labels": {
+    "P": "v2.4",
+    "Q": "v3.3",
+    "R": "simple"
+   },
+   "pick_label": "Q",
+   "pick": "v3.3"
+  },
+  {
+   "id": "h05-channel-edu",
+   "editor": "opus",
+   "labels": {
+    "P": "v2.4",
+    "Q": "v3.3",
+    "R": "simple"
+   },
+   "pick_label": "R",
+   "pick": "simple"
+  },
+  {
+   "id": "h06-channel-promo",
+   "editor": "sonnet",
+   "labels": {
+    "P": "simple",
+    "Q": "v2.4",
+    "R": "v3.3"
+   },
+   "pick_label": "P",
+   "pick": "simple"
+  },
+  {
+   "id": "h03-own",
+   "editor": "smart",
+   "labels": {
+    "P": "simple",
+    "Q": "v2.4",
+    "R": "v3.3"
+   },
+   "pick_label": "Q",
+   "pick": "v2.4"
+  },
+  {
+   "id": "h17-practice",
+   "editor": "smart",
+   "labels": {
+    "P": "simple",
+    "Q": "v2.4",
+    "R": "v3.3"
+   },
+   "pick_label": "Q",
+   "pick": "v2.4"
+  },
+  {
+   "id": "h11-coauthor",
+   "editor": "opus",
+   "labels": {
+    "P": "v2.4",
+    "Q": "simple",
+    "R": "v3.3"
+   },
+   "pick_label": "Q",
+   "pick": "simple"
+  },
+  {
+   "id": "h18-academic",
+   "editor": "opus",
+   "labels": {
+    "P": "v3.3",
+    "Q": "simple",
+    "R": "v2.4"
+   },
+   "pick_label": "R",
+   "pick": "v2.4"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+name: Новое правило
+description: Предложить маркер, правило или расширение
+labels: ["pattern-proposal"]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: ID правила
+      description: Латиница через дефис, например hedge-stack
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоритет
+      options: [P0, P1, P2]
+    validations:
+      required: true
+  - type: textarea
+    id: fires
+    attributes:
+      label: Пример, где правило срабатывает
+    validations:
+      required: true
+  - type: textarea
+    id: clean
+    attributes:
+      label: Пример, где правило срабатывать не должно
+      description: Человеческий текст, похожий на срабатывание. Без него правило не принимается.
+    validations:
+      required: true
+  - type: textarea
+    id: profiles
+    attributes:
+      label: Профили, где правило ослабить или отключить
+  - type: textarea
+    id: source
+    attributes:
+      label: Источник
+      description: Нужен, если правило опирается на фактическое утверждение о том, как пишут модели или люди

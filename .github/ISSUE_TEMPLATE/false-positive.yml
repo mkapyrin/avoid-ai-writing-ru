@@ -1,0 +1,37 @@
+name: Ложное срабатывание
+description: Скилл пометил нормальный человеческий текст
+labels: ["false-positive"]
+body:
+  - type: textarea
+    id: text
+    attributes:
+      label: Фрагмент текста
+      description: Можно обезличить. Только текст, без персональных данных.
+    validations:
+      required: true
+  - type: input
+    id: rule
+    attributes:
+      label: Какое правило сработало
+      description: ID из SKILL.md, например lex-1a или negation-reveal
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Жанр текста
+      options: [social, blog, technical-blog, official, personal, email-friendly, creative, casual, не знаю]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Почему флаг ошибочный
+      description: Кто так пишет и почему это нормально в этом жанре
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Агент и модель
+      description: Например, Claude Code + Claude Sonnet, Cursor + GPT
