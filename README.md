@@ -8,6 +8,7 @@ A Russian adaptation of [avoid-ai-writing](https://github.com/conorbronsdon/avoi
 - **Native-language changes:** lexical tiers were rebuilt from Russian AI output rather than translated. Added rules cover Russian bureaucratese (kantselyarit) and English calques, the "Это не X. Это Y." reveal pattern, and a dash rule that keeps grammatical dashes in whatever form the author used and flags only theatrical ones. Stricter mechanics such as a no-dash rule live in an optional house-style file (`examples/styles/`). Structural rules from upstream carry over largely unchanged. Niche vocabularies and thesauri plug in as separate extension files.
 - **Adaptive depth:** the skill first classifies the input as machine-written, mixed, or human, then removes patterns while keeping every claim (machine-written), edits by parts (mixed), or makes light in-sentence fixes (human).
 - **Evidence:** the vocabulary tables are editorial hypotheses from one maintainer's editing practice, not corpus measurements. Versions were compared in four blind rounds on 25 private texts across genres (LLM executors and judges, one judge per pair); the adaptive version won 17 of 26 pairs against the previous one, 4 losses, 5 ties. That sample was also used for tuning, so treat it as a development-set result. Two held-out runs followed (20 unseen texts each; previous version, candidate and a plain prompt; three editors from two model families; blind LLM judges; a blind check by the maintainer). In the second run LLM judges ranked the candidate first for every editor, with a third of the previous version's fact losses, but the maintainer picked the plain prompt in 7 of 12 cases and the candidate in none. Neither run passed its pre-registered decision rule. The current version 4.0 has not been evaluated on held-out text yet. `examples/` holds hand-written cases that should fire and cases that must stay clean, across registers. See `LIMITATIONS.md` for known false positives (the boundary between grammatical and theatrical dashes, regional Russian, stylized fiction).
+- **Not an authorship detector:** matches are writing-quality signals, not proof that AI wrote the text. Do not use the skill to accuse, grade, reject or penalize people.
 - **Maintainer:** [mkapyrin](https://github.com/mkapyrin). Issues in Russian or English.
 
 ## Описание на русском
@@ -111,7 +112,24 @@ git clone https://github.com/mkapyrin/avoid-ai-writing-ru ~/.openclaw/skills/avo
 
 Правила основаны на редакторском опыте. Частоты на русском корпусе не измерялись, словари служат рабочими гипотезами. Версии сравнивались слепым тестом на 25 текстах разных жанров. На двух отложенных выборках проверялись v3.3 и v3.4. Обе версии не прошли заранее заданные критерии. Во втором прогоне судьи-модели предпочли v3.4 у всех трёх редакторов, однако мейнтейнер в слепой проверке чаще выбирал простой промпт. Текущая v4.0 на отложенных текстах пока не проверялась. Отчёты: [`evals/reports/`](evals/reports/). Подробно о доказательной базе, вариантах русского, ложных срабатываниях правила тире и художественном тексте написано в [`LIMITATIONS.md`](LIMITATIONS.md).
 
-Совпадение с маркерами не доказывает, что текст написал AI. Не используйте скилл для решений о людях.
+Совпадение с маркерами не доказывает, что текст написал AI.
+
+**Не используйте скилл для решений о людях.** Его отчёт годится, чтобы поправить текст. Судить по нему об авторе нельзя. Поэтому не стоит на его основании:
+
+- обвинять студента или школьника в списывании и снижать оценку;
+- отклонять резюме, тестовое задание, заявку на грант или конкурс;
+- отказывать в публикации статьи, рассказа или поста;
+- наказывать сотрудника или подрядчика за «текст от нейросети»;
+- публично заявлять, что автор пользовался AI.
+
+Почему:
+
+- **Так пишут и люди.** Канцелярит, штампы, ровные абзацы и «важно отметить» встречаются в официальных письмах, школьных сочинениях, текстах в спешке и у тех, для кого русский не родной. Скилл пометит их так же, как текст модели.
+- **Точность не измерена.** Для русского языка у скилла нет данных о том, как часто он ошибается. У коммерческих AI-детекторов на английском доля ложных срабатываний на текстах неносителей языка превышала 60% (Liang et al., *Patterns*, 2023).
+- **Приметы легко убрать.** После правки, в том числе этим скиллом, маркеров в тексте модели становится меньше. Поэтому отсутствие флагов тоже ничего не доказывает.
+- **Ошибка дорого стоит человеку.** Ложное обвинение бьёт по репутации, оценке или работе, а оспорить отчёт модели трудно.
+
+Если вопрос об авторстве действительно важен, смотрите на другие признаки: черновики и историю правок, разговор с автором о тексте, его прежние работы. Отчёт скилла может быть только поводом присмотреться к тексту, не доказательством.
 
 Примеры, на которых правила должны срабатывать и на которых не должны, лежат в [`examples/`](examples/).
 
