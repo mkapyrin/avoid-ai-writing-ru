@@ -2,6 +2,11 @@
 
 Формат: [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/). Версии следуют [SemVer](https://semver.org/lang/ru/): новое правило поднимает минорную версию, смена поведения существующих правил поднимает мажорную.
 
+## [Unreleased]
+
+### Изменено
+- README: ссылка на заявку #449 заменена ссылкой на раздел [Community / Multilingual](https://github.com/conorbronsdon/avoid-ai-writing#community--multilingual) upstream. Строку добавил [conorbronsdon/avoid-ai-writing#459](https://github.com/conorbronsdon/avoid-ai-writing/pull/459), смержен 2026-11-24.
+
 ## [4.0.0] - 2026-11-22
 
 Личные требования мейнтейнера отделены от базовых правил. Скилл выпускается для всех пользователей, поэтому механики одного автора вынесены в необязательный домашний стиль.

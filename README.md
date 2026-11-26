@@ -139,5 +139,5 @@ git clone https://github.com/mkapyrin/avoid-ai-writing-ru ~/.openclaw/skills/avo
 
 ## Лицензия
 
-MIT. Адаптация [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) (MIT, Conor Bronsdon), основа: v3.22.0. Upstream этот репозиторий не поддерживает и за его правила не отвечает. Заявка на ссылку в разделе сообщества upstream: [#449](https://github.com/conorbronsdon/avoid-ai-writing/issues/449).
+MIT. Адаптация [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) (MIT, Conor Bronsdon), основа: v3.22.0. Upstream этот репозиторий не поддерживает и за его правила не отвечает. Upstream ссылается на этот репозиторий в разделе [Community / Multilingual](https://github.com/conorbronsdon/avoid-ai-writing#community--multilingual).
 
